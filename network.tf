@@ -5,6 +5,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "example" {
   name     = "testrg"
   location = "centralus"
+}
 
 module "network" {
   source              = "Azure/network/azurerm"
